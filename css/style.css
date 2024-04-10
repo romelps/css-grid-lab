@@ -1,0 +1,38 @@
+body {
+    background-color: #8b38b1;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1 fr 2 fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "div1 div1 div1"
+    "div2 div2 div2"
+    /* "button button button"; */
+    margin: 0;
+    
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 0 15px 0 15px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+}
+
+nav {
+    /* grid-column: span 100vh; */
+    align-items: center;
+    grid-area: nav;
+    background-color: #3adbab
+}
+
+h1 {
+    grid-area: h1;
+}
+#sign-up{
+    background-color: white;
+    color: black;
+    justify-content: right;
+}
