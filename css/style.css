@@ -1,7 +1,7 @@
 body {
     background-color: #8b38b1;
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 1 fr 2 fr;
     grid-template-areas: 
     "nav nav nav"
@@ -9,6 +9,7 @@ body {
     "div2 div2 div2"
     /* "button button button"; */
     margin: 0;
+    padding: 0;
     
 }
 
@@ -25,14 +26,31 @@ nav {
     /* grid-column: span 100vh; */
     align-items: center;
     grid-area: nav;
-    background-color: #3adbab
+    background-color: #3adbab;
+    grid-column: span 2;
 }
+/* #div1 {
+    grid-area: div1;
+}
+#div2{
+    grid-area: div2;
+} */
 
 h1 {
     grid-area: h1;
 }
+
 #sign-up{
     background-color: white;
     color: black;
     justify-content: right;
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+
 }
